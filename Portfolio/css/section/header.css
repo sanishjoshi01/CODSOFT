@@ -1,0 +1,64 @@
+#header-section {
+    position: sticky;
+    top: 0;
+}
+
+.header-container {
+    height: 90px;
+    /* outline: 1px solid salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .logo a {
+    text-transform: uppercase;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* outline: 1px solid red; */
+}
+
+.header-container .logo a img {
+    height: 40px;
+    width: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.header-container .logo a:hover img {
+    transform: rotate(180deg);
+}
+
+.animate {
+    animation: aniLetter 3s ease-in infinite;
+    animation-delay: calc(.3s * var(--i));
+}
+
+@keyframes aniLetter {
+
+    0%,
+    40%,
+    100% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+}
+
+.header-container .menu {
+    /* outline: 1px solid red; */
+    width: 60%;
+}
+
+.header-container .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.header-container .menu ul li:hover {
+    color: var(--clr-accent);
+}

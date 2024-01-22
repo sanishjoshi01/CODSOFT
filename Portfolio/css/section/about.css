@@ -1,0 +1,79 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(500px + 90px);
+}
+
+.about-container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info .name h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.info .detail {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.info .buttons {
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.info .buttons a:first-child {
+    border-radius: 15px;
+    background-color: var(--clr-accent);
+    padding: 10px 20px;
+    color: var(--clr-white);
+}
+
+.info .buttons a:last-child {
+    border-radius: 15px;
+    color: var(--clr-black);
+    padding: 10px 20px;
+    border: 1px solid var(--clr-black);
+}
+
+.info .buttons a:first-child:hover {
+    transition: transform .5s ease;
+    transform: translateY(-5px);
+}
+
+.info .buttons a:last-child:hover {
+    transition: transform .5s ease;
+    transform: translateY(5px);
+}
+
+.info .socials {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* .info,
+.image {
+    outline: 1px solid red;
+} */
+
+.img-holder img {
+    border-radius: 50% 20% 10%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: border-radius .5s ease-in-out;
+}
+
+.img-holder:hover img {
+    border-radius: 10% 20% 50%;
+}

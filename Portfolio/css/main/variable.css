@@ -4,5 +4,6 @@
     --clr-primary: #FCF6F5;
     --clr-secondary: #2E4857;
     --clr-accent: #FF0A54;
-    
+    --clr-black-40-opac: rgba(0, 0, 0, 0.4);
+    --header-height: 90px;
 }

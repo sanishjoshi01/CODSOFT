@@ -1,3 +1,39 @@
 .skill-container {
-    height: calc(900px + 90px);
+    height: calc(650px + var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-container .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-container .content .img-container {
+    width: 120px;
+    height: 120px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container input {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+}
+
+.content .img-container:hover input {
+    visibility: visible;
+    animation: aaa .5s linear 1 normal forwards;
+}
+
+@keyframes aaa {
+    100% {
+        top: -25px;
+    }
 }

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(500px + 90px);
+    height: calc(500px + var(--header-height));
 }
 
 .about-container .info {
@@ -21,7 +21,7 @@
 .info .detail {
     font-size: 2rem;
     line-height: 3rem;
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--clr-black-40-opac);
 }
 
 .info .buttons {

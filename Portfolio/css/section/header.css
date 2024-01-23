@@ -6,7 +6,7 @@
 
 .header-container {
     background-color: var(--clr-primary);
-    height: 90px;
+    height: var(--header-height);
     /* outline: 1px solid salmon; */
     display: flex;
     align-items: center;

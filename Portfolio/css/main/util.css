@@ -1,6 +1,6 @@
  section,
  header {
-     max-width: 85%;
+     max-width: 80%;
      margin: 0 auto;
      padding: 0 3rem;
      outline: 1px solid red;
@@ -22,8 +22,6 @@
      }
  }
 
-
- #project-section,
  #service-section,
  #contact-section,
  #footer-section {

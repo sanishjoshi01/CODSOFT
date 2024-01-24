@@ -21,15 +21,71 @@
     position: relative;
 }
 
-.img-container input {
+.img-container span {
     position: absolute;
     visibility: hidden;
-    top: 0;
+    border-radius: 24px;
+    outline: 1px solid #d9d7d7;
+    top: -10px;
+    background-color: #eaeaea;
+    width: 100%;
 }
 
-.content .img-container:hover input {
+.img-container .html p,
+.img-container .css p,
+.img-container .js p,
+.img-container .bs p,
+.img-container .github p,
+.img-container .php p,
+.img-container .lara p,
+.img-container .ai p,
+.img-container .ps p {
+    font-size: 0.9rem;
+    border-radius: 16px;
+    padding-right: 4px;
+    text-align: right;
+    color: var(--clr-white);
+    background-color: #337ab7;
+}
+
+.img-container .html p,
+.img-container .css p {
+    width: 90%;
+}
+
+.img-container .js p,
+.img-container .github p,
+.img-container .ps p {
+    width: 80%;
+}
+
+.img-container .bs p {
+    width: 85%;
+}
+
+.img-container .php p {
+    width: 70%;
+}
+
+.img-container .lara p,
+.img-container .ai p {
+    width: 60%;
+}
+
+.content .img-container img {
+    transition: scale .5s ease-out;
+    cursor: grab;
+}
+
+.content .img-container:hover img {
+    opacity: 0.8;
+    scale: 0.9;
+    transition: scale .5s ease-in;
+}
+
+.content .img-container:hover span {
     visibility: visible;
-    animation: aaa .5s linear 1 normal forwards;
+    animation: aaa .5s ease-in-out 1 normal forwards;
 }
 
 @keyframes aaa {

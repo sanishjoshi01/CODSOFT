@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+::selection {
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
+}
+
 li {
     list-style-type: none;
 }

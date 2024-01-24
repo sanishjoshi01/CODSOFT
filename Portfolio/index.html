@@ -169,7 +169,126 @@
                 <p class="para">Some of the recent projects</p>
             </div>
             <div class="content">
+                <div class="project-cards-wrapper">
+                    <div class="project-card">
+                        <div class="img-card">
+                            <div class="img-holder-card">
+                                <img src="images/daraz.png" alt="project image">
+                            </div>
+                            <div class="demo">
+                                <a href="#">Preview <i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-detail-card">
+                            <h1 class="project-title">Daraz Clone</h1>
+                            <p class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente beatae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="img-card">
+                            <div class="img-holder-card">
+                                <img src="images/ezfresh.png" alt="project image">
+                            </div>
+                            <div class="demo">
+                                <a href="#">Preview <i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-detail-card">
+                            <h1 class="project-title">Daraz Clone</h1>
+                            <p class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente beatae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="img-card">
+                            <div class="img-holder-card">
+                                <img src="images/ttt.jpg" alt="project image">
+                            </div>
+                            <div class="demo">
+                                <a href="#">Preview <i class="fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-detail-card">
+                            <h1 class="project-title">Daraz Clone</h1>
+                            <p class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente
+                                beatae.consec
+                                teturconsecteturconsecte consec consec consecconsec consec
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <style>
+                    .project-cards-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .project-card {
+                        width: 350px;
+                        height: 450px;
+                        /* outline: 1px solid red; */
+                        padding-block: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.25rem;
+                    }
+
+                    .project-card .img-card .img-holder-card {
+                        background-color: var(--clr-secondary);
+                        border-radius: 20px;
+                    }
+
+                    .project-card .img-card .img-holder-card img {
+                        width: 350px;
+                        height: 300px;
+                        outline: 1px solid rgba(0, 0, 0, 0.3);
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+
+                    .project-card .img-card {
+                        position: relative;
+                    }
+
+                    .project-card .img-card .demo {
+                        position: absolute;
+                        opacity: 0;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .project-card .img-card:hover .demo {
+                        opacity: 1;
+                        transition: all .3s ease-in;
+                    }
+
+                    .project-card .img-card:hover img {
+                        opacity: 0.3;
+                        outline: 1px solid rgba(0, 0, 0, 1);
+                    }
+
+                    .project-card .img-card .demo a {
+                        background-color: var(--clr-accent);
+                        color: var(--clr-white);
+                        padding: 0.2rem .5rem;
+                        border-radius: 8px;
+                    }
+
+                    .project-detail-card .project-info {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                </style>
             </div>
         </div>
     </section>

@@ -3,8 +3,10 @@
      max-width: 80%;
      margin: 0 auto;
      padding: 0 3rem;
-     outline: 1px solid red;
+     /* outline: 1px solid red; */
  }
+
+
 
  section {
      animation: fade-in linear both;

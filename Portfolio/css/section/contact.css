@@ -1,0 +1,99 @@
+.contact-container {
+    height: calc(500px + var(--header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h1 {
+    font-size: 3rem;
+}
+
+.contact-left p,
+.contact-left i {
+    font-size: 1.5rem;
+}
+
+.contact-form {
+
+    max-width: 500px;
+}
+
+#mail {
+    max-width: inherit;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#mail i {
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+#mail p a {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+
+#mail p a:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-accent);
+}
+
+.contact-form {
+    flex: 1;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#form legend {
+    font-size: 1.5rem;
+}
+
+#form input,
+#form textarea {
+    height: 40px;
+    border-radius: 12px;
+    padding-inline: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#form input:focus,
+#form textarea:focus {
+    outline: 1px solid var(--clr-accent);
+}
+
+#form textarea {
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 150px;
+    min-height: 100px;
+    padding: 4px 8px;
+}
+
+#form button {
+    width: 70px;
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 10px;
+}

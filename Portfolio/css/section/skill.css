@@ -1,5 +1,5 @@
 .skill-container {
-    height: calc(650px + var(--header-height));
+    height: calc(920px + var(--header-height));
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -16,9 +16,10 @@
 .scaler-box {
     width: 5px;
     height: 300px;
-    color: var(--clr-secondary);
+    color: var(--clr-black-40-opac);
     background-color: var(--clr-secondary);
     position: relative;
+    border-radius: 20px;
 }
 
 .scaler-box p:nth-child(1) {
@@ -34,6 +35,7 @@
 }
 
 .skill-box {
+    cursor: grab;
     height: 300px;
     display: flex;
     align-items: flex-end;

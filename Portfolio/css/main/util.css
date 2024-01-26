@@ -9,7 +9,7 @@
 
 
  section {
-     animation: fade-in linear both;
+     /* animation: fade-in linear both; */
      animation-timeline: view();
      animation-range: entry 20% cover 50%;
  }
@@ -41,5 +41,5 @@
  }
 
  .content {
-     margin: 2rem 0;
+     margin: 1rem 0;
  }

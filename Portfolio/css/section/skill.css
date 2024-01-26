@@ -9,87 +9,120 @@
 
 .skill-container .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: .25rem;
 }
 
-.skill-container .content .img-container {
-    width: 120px;
-    height: 120px;
-}
-
-.img-container {
+.scaler-box {
+    width: 5px;
+    height: 300px;
+    color: var(--clr-secondary);
+    background-color: var(--clr-secondary);
     position: relative;
 }
 
-.img-container span {
+.scaler-box p:nth-child(1) {
     position: absolute;
-    visibility: hidden;
-    border-radius: 24px;
-    outline: 1px solid #d9d7d7;
-    top: -10px;
-    background-color: #eaeaea;
-    width: 100%;
+    top: 0;
+    right: 10px;
 }
 
-.img-container .html p,
-.img-container .css p,
-.img-container .js p,
-.img-container .bs p,
-.img-container .github p,
-.img-container .php p,
-.img-container .lara p,
-.img-container .ai p,
-.img-container .ps p {
-    font-size: 0.9rem;
-    border-radius: 16px;
-    padding-right: 4px;
-    text-align: right;
-    color: var(--clr-white);
-    background-color: #337ab7;
+.scaler-box p:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 }
 
-.img-container .html p,
-.img-container .css p {
-    width: 90%;
+.skill-box {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    transition: transform .3s ease;
 }
 
-.img-container .js p,
-.img-container .github p,
-.img-container .ps p {
-    width: 80%;
+.skill-box:hover {
+    transform: translateY(-10px);
+    transition: transform .3s ease-in;
 }
 
-.img-container .bs p {
-    width: 85%;
+.html-box {
+    width: 150px;
+    height: 270px;
+    background-color: #e85823;
 }
 
-.img-container .php p {
-    width: 70%;
+.css-box {
+    width: 150px;
+    height: 270px;
+    background-color: #379ad6;
 }
 
-.img-container .lara p,
-.img-container .ai p {
-    width: 60%;
+.js-box {
+    width: 150px;
+    height: 240px;
+    background-color: #f0db4f;
 }
 
-.content .img-container img {
-    transition: scale .5s ease-out;
-    cursor: grab;
+.bootstrap-box {
+    width: 150px;
+    height: 255px;
+    background-color: #563e7c;
 }
 
-.content .img-container:hover img {
-    opacity: 0.8;
-    scale: 0.9;
-    transition: scale .5s ease-in;
+.github-box {
+    width: 150px;
+    height: 240px;
+    background-color: #171515;
 }
 
-.content .img-container:hover span {
-    visibility: visible;
-    animation: aaa .5s ease-in-out 1 normal forwards;
+.php-box {
+    width: 150px;
+    height: 210px;
+    background-color: #3765af;
 }
 
-@keyframes aaa {
-    100% {
-        top: -25px;
-    }
+.laravel-box {
+    width: 150px;
+    height: 180px;
+    background-color: #ef3b2d;
+}
+
+.ai-box {
+    width: 150px;
+    height: 180px;
+    background-color: #320000;
+}
+
+.ps-box {
+    width: 150px;
+    height: 240px;
+    background-color: #001e36;
+}
+
+.rectangle {
+    position: relative;
+}
+
+.rectangle img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle {
+    text-align: center;
+}
+
+.rectangle p {
+    color: white;
+    opacity: 0;
+}
+
+.skill-box:hover .rectangle p {
+    opacity: 1;
+    padding-block: .5rem;
+    transition: opacity .5s ease;
 }

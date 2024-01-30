@@ -1,0 +1,49 @@
+#header {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../images/main.jpg);
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image-container .main-heading {
+    display: grid;
+    place-items: center;
+    gap: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.image-container .main-heading h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.image-container .main-heading a {
+    color: var(--clr-white);
+    background-color: var(--clr-accent);
+    border-radius: 100vw;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+}

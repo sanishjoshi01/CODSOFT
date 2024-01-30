@@ -119,13 +119,89 @@
             </div>
         </section>
 
-        <style>
+        <section id="package">
+            <div class="package-content">
+                <div class="detail-group">
+                    <h1>Event Packages</h1>
+                </div>
+                <div class="package-group">
+                    <div class="package-item">
+                        <p class="package-heading">Small Gatherings</p>
+                        <p class="package-price">$2000</p>
+                        <li>8 hours of venue time</li>
+                        <li>Up to 100 guests</li>
+                        <li>Tables and chairs for up to 100</li>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="package-item">
+                        <p class="package-heading">Gold Package</p>
+                        <p class="package-price">$2500</p>
+                        <li>8 hours of venue time</li>
+                        <li>Up to 300 guests</li>
+                        <li>Tables and chairs for up to 300</li>
+                        <li>2 hours photo access</li>
+                        <a href="#">Get Started</a>
+                    </div>
+                    <div class="package-item">
+                        <p class="package-heading">Diamond Package</p>
+                        <p class="package-price">$3000</p>
+                        <li>8 hours of venue time</li>
+                        <li>Up to 500 guests</li>
+                        <li>Tables and chairs for up to 500</li>
+                        <li>3 hours photo access</li>
+                        <li>Event Planner</li>
+                        <li>Day of Management</li>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <style>
+            .package-content {
+                color: var(--clr-black);
+                background-color: var(--clr-primary);
+                height: inherit;
+                padding-inline: 10%;
+                display: grid;
+                place-items: center;
+            }
+
+            .package-group {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+
+            .package-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .package-item .package-heading {
+                font-size: 1.25rem;
+                display: inline-block;
+                padding-bottom: .25rem;
+                border-bottom: 4px solid var(--clr-accent);
+            }
+
+            .package-item .package-price {
+                font-size: 2rem;
+            }
+
+            .package-item li {
+                font-size: 1rem;
+            }
+
+            .package-item a {
+                background-color: var(--clr-accent);
+                color: var(--clr-white);
+                padding: .5rem 1rem;
+            }
         </style>
 
-        <section id="package">
-            Package
-        </section>
         <section>
             Contact
         </section>

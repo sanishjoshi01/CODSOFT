@@ -9,7 +9,6 @@ header nav {
     justify-content: space-between;
     color: var(--clr-black);
     background-color: var(--clr-primary);
-    outline: 2px solid red;
 }
 
 .logo a {
@@ -21,7 +20,6 @@ header nav {
 
 .menu-list {
     display: flex;
-    outline: 1px solid salmon;
 }
 
 .menu-list li {

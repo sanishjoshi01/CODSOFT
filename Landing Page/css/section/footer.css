@@ -1,0 +1,24 @@
+.footer-content {
+    height: 33vh;
+    color: var(--clr-black);
+    background-color: var(--clr-primary);
+    display: grid;
+    place-items: center;
+    padding-inline: 10%;
+}
+
+.footer-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.footer-item {
+    display: grid;
+    gap: .5rem;
+}
+
+.quick-links li:hover {
+    text-decoration: underline;
+}

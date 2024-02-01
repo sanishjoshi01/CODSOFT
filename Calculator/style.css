@@ -1,0 +1,66 @@
+body {
+    background-color: #162238;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+    color: #fff;
+    display: grid;
+}
+
+input {
+    max-width: 600px;
+    height: 90px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #1e2f49;
+    border: none;
+    border-radius: 20px;
+    padding-inline: 1rem;
+}
+
+input:focus {
+    outline: 1px solid #209493;
+}
+
+.button-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-content: center;
+    gap: 1vw;
+}
+
+.button {
+    text-align: center;
+    vertical-align: center;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    background-color: #1e2f49;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button:nth-child(4n) {
+    background-color: #2867c6;
+}
+
+.button:nth-child(4n):hover {
+    background-color: rgba(40, 103, 198, 0.6);
+}
+
+.button:nth-child(15) {
+    background-color: #209493;
+}
+
+.button:nth-child(15):hover {
+    background-color: rgba(32, 148, 147, 0.6);
+}

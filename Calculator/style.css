@@ -12,7 +12,7 @@ body {
 
 input {
     max-width: 600px;
-    height: 90px;
+    height: 100px;
     font-size: 2rem;
     color: #fff;
     background-color: #1e2f49;
@@ -25,15 +25,22 @@ input:focus {
     outline: 1px solid #209493;
 }
 
+.top {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .button-container {
-    height: 80vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: auto auto auto auto;
     place-content: center;
     gap: 1vw;
 }
 
-.button {
+.button,
+.clear {
     text-align: center;
     vertical-align: center;
     height: 100px;
@@ -57,10 +64,12 @@ input:focus {
     background-color: rgba(40, 103, 198, 0.6);
 }
 
+.clear,
 .button:nth-child(15) {
     background-color: #209493;
 }
 
+.clear:hover,
 .button:nth-child(15):hover {
     background-color: rgba(32, 148, 147, 0.6);
 }

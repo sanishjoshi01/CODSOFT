@@ -9,10 +9,12 @@ function display(value) {
 }
 
 function solve() {
-    let val = input.value;
-    let result = eval(val);
-    input.value = result;
-    return result;
+    if (input.value !== "") {
+        let val = input.value;
+        let result = eval(val);
+        input.value = result;
+        return result;
+    }
 }
 
 function clearInput() {

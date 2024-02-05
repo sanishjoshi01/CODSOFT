@@ -7,3 +7,10 @@ function display(value) {
     input.value += value;
     return value;
 }
+
+function solve() {
+    let val = input.value;
+    let result = eval(val);
+    input.value = result;
+    return result;
+}

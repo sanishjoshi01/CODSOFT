@@ -5,10 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODSOFT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        main {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .tasks {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .preview-btn {
+            background-color: palevioletred;
+            color: white;
+            text-decoration: none;
+            padding: .5rem 1rem;
+        }
+
+        .preview-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="Portfolio/index.html">PORTFOLIO</a>
+    <main>
+        <h1>CODSOFT INTERNSHIP</h1>
+        <h2>Web Development (Level 1)</h2>
+        <div class="tasks">
+            <h2>Task 1 - Portfolio</h2>
+            <a class="preview-btn" href="Portfolio/index.html" target="_blank">Preview</a>
+        </div>
+
+        <div class="tasks">
+            <h2>Task 2 - Landing Page</h2>
+            <a class="preview-btn" href="Landing Page/index.html" target="_blank">Preview</a>
+        </div>
+
+        <div class=" tasks">
+            <h2>Task 1 - Calculator</h2>
+            <a class="preview-btn" href="Calculator/index.html" target="_blank">Preview</a>
+        </div>
+    </main>
 </body>
 
 </html>

@@ -14,3 +14,7 @@ function solve() {
     input.value = result;
     return result;
 }
+
+function clearInput() {
+    input.value = "";
+}

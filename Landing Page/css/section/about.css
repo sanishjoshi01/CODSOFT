@@ -36,7 +36,7 @@
 
 .image-item img {
     width: inherit;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     transition: opacity .3s ease-in-out;
 }

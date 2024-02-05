@@ -55,16 +55,21 @@
 }
 
 .info .socials {
+    margin-top: 1rem;
     font-size: 2rem;
     display: flex;
     gap: 2rem;
+    justify-content: space-around;
+}
+
+.info .socials i {
+    transition: scale .3s ease;
 }
 
 
-/* .info,
-.image {
-    outline: 1px solid red;
-} */
+.info .socials i:hover {
+    scale: 1.2;
+}
 
 .img-holder img {
     border-radius: 50% 20% 10%;

@@ -8,9 +8,9 @@
 .project-cards-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 2.25rem;
 }
 
 .project-card {
@@ -22,7 +22,7 @@
     background-color: var(--clr-secondary);
     border-radius: 12px;
     color: var(--clr-primary);
-    box-shadow: 0 0 5px 0 var(--clr-secondary);
+    box-shadow: 0 0 3px 0 var(--clr-secondary);
 }
 
 .project-card:hover {
@@ -80,7 +80,6 @@
     color: white;
     font-size: 2rem;
 }
-
 
 .tech-stacks {
     font-size: .875rem;

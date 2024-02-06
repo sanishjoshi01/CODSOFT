@@ -41,6 +41,56 @@
                     <span class="animate" style="--i:7">h</span>
                 </a>
             </div>
+            <script>
+                const barBtn = document.querySelector('#bar-icon');
+                const menu = document.querySelector('.menu');
+                console.log(menu);
+
+                barBtn.addEventListener('click', () => {
+                    if (menu.style.display === 'none') {
+                        menu.style.display = 'block';
+                    }
+                    else {
+                        menu.style.display === 'none'
+                    }
+                });
+            </script>
+            <style>
+                #bar-icon {
+                    display: none;
+                }
+
+                @media (width<1080px) {
+                    .header-container .menu {
+                        position: relative;
+                    }
+
+                    .header-container .menu ul {
+                        flex-direction: column;
+                        position: absolute;
+                        top: var(--header-height);
+                        right: 0;
+                        background-color: var(--clr-secondary);
+                        padding: .875rem 2rem;
+                        width: 100%;
+                        display: none;
+                    }
+
+                    .header-container .menu ul li {
+                        color: var(--clr-white);
+                        line-height: 2rem;
+                    }
+
+                    .hamburger-menu {
+                        background-color: red;
+                    }
+
+                    #bar-icon {
+                        display: block;
+                        float: right;
+                    }
+                }
+            </style>
             <div class="menu">
                 <ul>
                     <a href="#">
@@ -55,17 +105,17 @@
                     <a href="#project-section">
                         <li>Project</li>
                     </a>
-                    <a href="#service-section">
-                        <li>Service</li>
-                    </a>
                     <a href="#contact-section">
                         <li>Contact</li>
                     </a>
                 </ul>
+                <a id="bar-icon">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </a>
             </div>
         </div>
     </header>
-    <section id="about-section">
+    <!-- <section id="about-section">
         <div class="about-container">
             <div class="info">
                 <div class="name">
@@ -374,7 +424,7 @@
                 <a href="https://www.facebook.com/Sanish.j1/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

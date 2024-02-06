@@ -51,7 +51,7 @@
 }
 
 .header-container .menu {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     width: 60%;
     text-transform: uppercase;
 }

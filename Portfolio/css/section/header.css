@@ -7,7 +7,6 @@
 .header-container {
     background-color: var(--clr-primary);
     height: var(--header-height);
-    /* outline: 1px solid salmon; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,14 +16,13 @@
 .header-container .logo a {
     text-transform: uppercase;
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
-    /* outline: 1px solid red; */
 }
 
 .header-container .logo a img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     transition: all .5s ease-in-out;
 }
 
@@ -51,18 +49,65 @@
 }
 
 .header-container .menu {
-    outline: 1px solid red;
-    width: 60%;
     text-transform: uppercase;
-}
-
-.header-container .menu ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.2rem;
+    gap: 2.25rem;
 }
 
-.header-container .menu ul li:hover {
+.header-container .menu li:hover {
     color: var(--clr-accent);
+}
+
+#btn {
+    right: 0;
+    position: absolute;
+    display: none;
+}
+
+.header-container {
+    position: relative;
+}
+
+.column-menu {
+    background-color: var(--clr-secondary);
+    flex-direction: column;
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    padding: .875rem 1.25rem;
+    text-align: center;
+    width: 50%;
+}
+
+.column-menu li {
+    color: var(--clr-primary);
+    line-height: 2rem;
+}
+
+@media (width < 1080px) {
+    #btn {
+        display: block;
+    }
+
+    .header-container .menu {
+        display: none;
+    }
+
+    .header-container .column-menu {
+        display: block;
+    }
+}
+
+@media (width < 420px) {
+    .header-container .logo a span {
+        display: none;
+    }
+
+    .column-menu {
+        width: 100%;
+    }
+
 }

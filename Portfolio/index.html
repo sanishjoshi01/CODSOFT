@@ -41,78 +41,27 @@
                     <span class="animate" style="--i:7">h</span>
                 </a>
             </div>
-            <script>
-                const barBtn = document.querySelector('#bar-icon');
-                const menu = document.querySelector('.menu');
-                console.log(menu);
 
-                barBtn.addEventListener('click', () => {
-                    if (menu.style.display === 'none') {
-                        menu.style.display = 'block';
-                    }
-                    else {
-                        menu.style.display === 'none'
-                    }
-                });
-            </script>
-            <style>
-                #bar-icon {
-                    display: none;
-                }
-
-                @media (width<1080px) {
-                    .header-container .menu {
-                        position: relative;
-                    }
-
-                    .header-container .menu ul {
-                        flex-direction: column;
-                        position: absolute;
-                        top: var(--header-height);
-                        right: 0;
-                        background-color: var(--clr-secondary);
-                        padding: .875rem 2rem;
-                        width: 100%;
-                        display: none;
-                    }
-
-                    .header-container .menu ul li {
-                        color: var(--clr-white);
-                        line-height: 2rem;
-                    }
-
-                    .hamburger-menu {
-                        background-color: red;
-                    }
-
-                    #bar-icon {
-                        display: block;
-                        float: right;
-                    }
-                }
-            </style>
-            <div class="menu">
-                <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="#about-section">
-                        <li>About</li>
-                    </a>
-                    <a href="#skill-section">
-                        <li>Skills</li>
-                    </a>
-                    <a href="#project-section">
-                        <li>Project</li>
-                    </a>
-                    <a href="#contact-section">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-                <a id="bar-icon">
-                    <i class="fa-solid fa-bars fa-xl"></i>
+            <ul class="menu">
+                <a href="#">
+                    <li>Home</li>
                 </a>
-            </div>
+                <a href="#about-section">
+                    <li>About</li>
+                </a>
+                <a href="#skill-section">
+                    <li>Skills</li>
+                </a>
+                <a href="#project-section">
+                    <li>Project</li>
+                </a>
+                <a href="#contact-section">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <a id="btn" href="#" onclick="show()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </header>
     <!-- <section id="about-section">
@@ -425,6 +374,7 @@
             </div>
         </div>
     </footer> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -10,11 +10,11 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2.25rem;
+    gap: 2.5rem;
 }
 
 .project-card {
-    width: 400px;
+    max-width: 400px;
     height: 150px;
     padding: .7rem;
     display: flex;
@@ -45,10 +45,14 @@
     gap: 1.25rem;
     justify-content: center;
     width: 80%;
-    /* outline: 1px solid salmon; */
+}
+
+.project-left .project-detail h2 {
+    font-size: clamp(.75rem, 4vw, 1.5rem);
 }
 
 .project-left .project-detail p {
+    font-size: clamp(.5rem, 3vw, 1rem);
     margin-top: .25rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -59,7 +63,6 @@
 
 .project-right {
     width: 20%;
-    /* outline: 1px solid salmon; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,11 +81,11 @@
 
 .project-right a i {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 4vw, 2rem);
 }
 
 .tech-stacks {
-    font-size: .875rem;
+    font-size: clamp(0.4375rem, 4vw, .875rem);
     display: flex;
     gap: 1rem;
 }

@@ -7,24 +7,22 @@
 
 .contact-wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.contact-left {
-    flex: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .contact-left h1 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .contact-left p,
 .contact-left i {
-    font-size: 1.5rem;
+    font-size: clamp(.75rem, 4vw, 1.5rem);
 }
 
 .contact-form {
-
     max-width: 500px;
 }
 
@@ -45,6 +43,7 @@
 #mail p a {
     color: var(--clr-accent);
     text-decoration: underline;
+    font-size: clamp(.5rem, 3vw, 1.25rem);
 }
 
 #mail p a:hover {
@@ -63,7 +62,7 @@
 }
 
 #form legend {
-    font-size: 1.875rem;
+    font-size: clamp(.9375rem, 4vw, 1.875rem);
 }
 
 #form input,
@@ -87,13 +86,19 @@
     padding: 4px 8px;
 }
 
+@media (width < 720px) {
+    #form textarea {
+        min-width: 100%;
+    }
+}
+
 #form button {
     width: 100px;
     color: var(--clr-white);
     background-color: var(--clr-accent);
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: clamp(.5rem, 4vw, 1rem);
     cursor: pointer;
     padding: 5px 10px;
     text-transform: uppercase;

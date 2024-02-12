@@ -1,5 +1,5 @@
 .project-container {
-    height: calc(600px + var(--header-height));
+    min-height: calc(600px + var(--header-height));
     display: flex;
     flex-direction: column;
     justify-content: center;
